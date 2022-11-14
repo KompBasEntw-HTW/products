@@ -20,17 +20,17 @@ public class ProductSeeder {
     if (reseedDb) {
       logger.info("seeding db");
       productRepository.deleteAll();
-      productRepository.save(new Product("Coffee 1", 4.4));
-      productRepository.save(new Product("Coffee 2", 4.4));
-      productRepository.save(new Product("Coffee 3", 4.4));
-      productRepository.save(new Product("Coffee 4", 4.4));
-      productRepository.save(new Product("Coffee 5", 4.4));
-      productRepository.save(new Product("Coffee 6", 4.4));
-      productRepository.save(new Product("Coffee 7", 4.4));
-      productRepository.save(new Product("Coffee 8", 4.4));
-      productRepository.save(new Product("Coffee 9", 4.4));
-      productRepository.save(new Product("Coffee 10", 4.4));
-      productRepository.save(new Product("Kaffee 11", 4.4));
+      productRepository.save(new Product(0L, "Coffee 1", 4.4));
+      productRepository.save(new Product(0L, "Coffee 2", 4.4));
+      productRepository.save(new Product(0L, "Coffee 3", 4.4));
+      productRepository.save(new Product(0L, "Coffee 4", 4.4));
+      productRepository.save(new Product(0L, "Coffee 5", 4.4));
+      productRepository.save(new Product(0L, "Coffee 6", 4.4));
+      productRepository.save(new Product(0L, "Coffee 7", 4.4));
+      productRepository.save(new Product(0L, "Coffee 8", 4.4));
+      productRepository.save(new Product(0L, "Coffee 9", 4.4));
+      productRepository.save(new Product(0L, "Coffee 10", 4.4));
+      productRepository.save(new Product(0L, "Kaffee 11", 4.4));
       logger.info("db seeded");
     }
   }
