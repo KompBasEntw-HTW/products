@@ -13,3 +13,7 @@ spring:
     url: jdbc:postgresql://products-db:5432/products
     username: postgres
     password: postgres
+
+# server:
+#   error:
+#     include-message: always
