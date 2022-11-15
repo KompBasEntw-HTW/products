@@ -1,9 +1,0 @@
-FROM amazoncorretto:17
-
-WORKDIR /app
-
-COPY . /app
-
-RUN ./gradlew
-
-CMD ./gradlew bootJar --continuous --quiet & 2>1 >/dev/null; ./gradlew bootRun

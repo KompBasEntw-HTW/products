@@ -1,2 +1,2 @@
-# products
-Products service for Extreme Coffee Experience
+# basket
+Product service Extreme Coffee Experience
