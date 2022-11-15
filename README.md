@@ -13,4 +13,3 @@ then:
 ./mvnw quarkus:remote-dev
 ```
 
-Now hot reloading should be working finde and startup times are quick too
