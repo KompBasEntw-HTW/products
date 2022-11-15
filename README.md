@@ -1,2 +1,16 @@
-# basket
+# products
 Product service Extreme Coffee Experience
+
+To run in dev mode run:
+```shell script
+./mvnw quarkus:build
+```
+then docker compose in root directory including with docker compose.dev
+
+then: 
+
+```shell script
+./mvnw quarkus:remove-dev
+```
+
+Now hot reloading should be working finde and startup times are quick too
