@@ -6,7 +6,7 @@ quarkus:
     username: postgres
     password: postgres
     jdbc:
-      url: jdbc:postgresql://postgres:5432/products
+      url: jdbc:postgresql://products-db:5432/products
   hibernate-orm:
     database: 
       generation: drop-and-create
