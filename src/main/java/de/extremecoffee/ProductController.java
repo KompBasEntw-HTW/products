@@ -10,18 +10,18 @@ import javax.ws.rs.NotFoundException;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
-import de.extremecoffee.product.Product;
+import de.extremecoffee.product.Coffee;
 
 @Path("/")
 public class ProductController {
     @GET
-    public List<Product> getAll() {
-        return Product.listAll();
+    public List<Coffee> getAll() {
+        return Coffee.listAll();
     }
 
     @POST
     @Transactional
-    public Product add(@Valid Product product) {
+    public Coffee add(@Valid Coffee product) {
         product.persist();
         return product;
     }
@@ -30,7 +30,7 @@ public class ProductController {
     @Path("/{id}")
     @Transactional
     public void delete(Long id) {
-        Product product = Product.findById(id);
+        Coffee product = Coffee.findById(id);
         if (product == null) {
             throw new NotFoundException();
         }
