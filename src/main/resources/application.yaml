@@ -15,3 +15,5 @@ quarkus:
   live-reload: 
     password: livereloadpassword 
     url: http://localhost:8082
+  redis:
+    hosts: redit://cache:6379
