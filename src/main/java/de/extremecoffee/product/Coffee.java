@@ -42,7 +42,7 @@ public class Coffee extends PanacheEntityBase {
   @NotBlank(message = "ImageURL is required")
   public String imageUrl;
 
-  @NotBlank(message = "Roast-level is required")
+  @NotNull()
   public Integer roastLevel;
 
   @Column(length = 500) 
