@@ -29,7 +29,7 @@ public class Coffee extends PanacheEntityBase {
 
   public String flavorNotes;
 
-  @Column(length = 400) 
+  @Column(length = 400)
   @NotBlank(message = "Description is required")
   public String description;
 
@@ -45,6 +45,6 @@ public class Coffee extends PanacheEntityBase {
   @NotNull()
   public Integer roastLevel;
 
-  @Column(length = 500) 
+  @Column(length = 500)
   public String roasterNotes;
 }
