@@ -1,19 +1,18 @@
 quarkus:
-  http:
-    root-path: /api/products
   datasource: 
     db-kind: postgresql
     username: postgres
     password: postgres
     jdbc:
-      url: jdbc:postgresql://products-db:5432/products
+      url: jdbc:postgresql://productdb:5432/products
   hibernate-orm:
     database: 
       generation: drop-and-create
+
   package:
     type: mutable-jar
   live-reload: 
     password: livereloadpassword 
     url: http://localhost:8082
-  redis:
-    hosts: redit://cache:6379
+  # redis:
+    # hosts: redit://cache:6379

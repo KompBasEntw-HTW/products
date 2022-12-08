@@ -12,8 +12,8 @@ import jakarta.ws.rs.Path;
 
 import de.extremecoffee.product.Coffee;
 
-@Path("/")
-public class ProductController {
+@Path("/coffee")
+public class CoffeeController {
   @GET
   public List<Coffee> getAll() {
     return Coffee.listAll();
