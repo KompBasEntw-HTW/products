@@ -16,3 +16,9 @@ quarkus:
     url: http://localhost:8082
   # redis:
     # hosts: redit://cache:6379
+
+"%prod":
+  quarkus:
+    hibernate-orm:
+      sql-load-script: import.sql
+  
