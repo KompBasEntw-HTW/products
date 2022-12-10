@@ -1,9 +1,30 @@
 INSERT INTO
+  flavornote (id, flavornote)
+VALUES
+  (nextval ('hibernate_sequence'), 'Milk Chocolate'),
+  (nextval ('hibernate_sequence'), 'Citrus'),
+  (nextval ('hibernate_sequence'), 'Ripe Fruit'),
+  (nextval ('hibernate_sequence'), 'Brow Sugar'),
+  (nextval ('hibernate_sequence'), 'Roastiness'),
+  (nextval ('hibernate_sequence'), 'Earthiness'),
+  (nextval ('hibernate_sequence'), 'Sweet Vanilla'),
+  (nextval ('hibernate_sequence'), 'Spice'),
+  (nextval ('hibernate_sequence'), 'Spice'),
+  (nextval ('hibernate_sequence'), 'Nut');
+
+INSERT INTO
+  bagsize (id, name, weightInGrams, priceModifier)
+VALUES
+  (nextval ('hibernate_sequence'), 'S', 250, 1.0),
+  (nextval ('hibernate_sequence'), 'M', 500, 0.9),
+  (nextval ('hibernate_sequence'), 'L', 750, 0.8),
+  (nextval ('hibernate_sequence'), 'XL', 1000, 0.7);
+
+INSERT INTO
   coffee (
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -14,10 +35,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Flatlander Signature Blend',
     'Sweet & Smooth',
-    'Milk Chocolate, Nut, Citrus',
     'Easy does it. And this coffee proves just that. A bittersweet aroma is balanced by a nutty, sweet finish. Here’s to one less complication.',
     'Topeka, KS',
     'PT''s',
@@ -32,7 +52,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -43,10 +62,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Mejor',
     'Balanced & Fruity',
-    'Ripe Fruit, Nut, Citrus',
     'Fruity and sweet, with a juicy note of cherry bolstered by a deep, nutty sweetness.',
     'Miami, FL',
     'Panther',
@@ -61,7 +79,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -72,10 +89,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Kickstart',
     'Sweet & Smooth',
-    'Milk Chocolate, Brown Sugar, Ripe Fruit',
     'Dark chocolate and brown sugar sweetness are front and center in this easy-drinking coffee, with a surprising (and delightful) note of rose throughout.',
     'Austin, TX',
     'Greater Goods',
@@ -90,7 +106,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -101,10 +116,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Emporium House Blend',
     'Sweet & Smooth',
-    'Milk Chocolate, Brown Sugar, Citrus',
     'Coffee should bring people together. This blend manages to unite three distinctly delicious single origins to create a truly harmonious coffee. Complex but approachable, no matter how you brew it.',
     'Austin, TX',
     'Cuvee',
@@ -119,7 +133,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -130,10 +143,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Nebula - a Dark Roast',
     'Comforting & Rich',
-    'Roastiness, Sweet Vanilla, Milk Chocolate',
     'Super honey-sweet and full-bodied, this comforting cup''s rich chocolaty notes and hint of roast will satisfy any sweet tooth.',
     'Oakland, CA',
     'Mother Tongue',
@@ -148,7 +160,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -159,10 +170,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Amsterdam',
     'Sweet & Smooth',
-    'Milk Chocolate, Nut, Sweet Vanilla',
     'Rich, sweet, smooth - this comforting cup reminds us of chocolaty fudge with a toffee swirl. Perfect on its own or with a splash of your favorite milk, we''re pretty sure you''ll love this one.',
     'New York, NY',
     'Joe',
@@ -177,7 +187,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -188,10 +197,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Joven Cauca',
     'Sweet & Smooth',
-    'Milk Chocolate, Ripe Fruit, Spice',
     'Produced by the Cafinorte co-op''s Young Coffee Producers Program, this coffee has a smooth body and comforting chocolate flavors up front, with enough cherry cola depth to make for a really fun cup.',
     'Grand Rapids, MI',
     'Sparrows',
@@ -206,7 +214,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -217,10 +224,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Late Night',
     'Comforting & Rich',
-    'Nut, Milk Chocolate, Spice',
     'This (caffeinated) cozy cup brings you all the comfort you need in your morning routine: a smooth, rich body and deep chocolaty sweetness envelop notes of roasted walnut and hints of clove.',
     'Greenville, SC',
     'Methodical',
@@ -235,7 +241,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -246,10 +251,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Funky Chicken',
     'Sweet & Smooth',
-    'Earthiness, Ripe Fruit, Milk Chocolate',
     'Don''t be surprised if you flap your arms and your feet start kickin'' - this balanced blend brings together an earthy sweetness with a bright plum acidity.',
     'Floyd, VA',
     'Red Rooster',
@@ -264,7 +268,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -275,10 +278,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Família Peixoto',
     'Sweet & Smooth',
-    'Milk Chocolate, Nut, Citrus',
     'A lusciously creamy body and cozy sweetness make this coffee a hug in a mug, with just a hint of citrus aromatics to keep things interesting.',
     'Chandler, AZ',
     'Peixoto',
@@ -293,7 +295,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -304,10 +305,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Canopy',
     'Sweet & Smooth',
-    'Spice, Milk Chocolate, Ripe Fruit',
     'A deep black cherry sweetness peeks through this coffee''s pronounced dark chocolate and cinnamon notes.',
     'Nashville, TN',
     'Common Voice',
@@ -322,7 +322,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -333,10 +332,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Bom Senso',
     'Comforting & Rich',
-    'Roastiness, Milk Chocolate, Nut',
     'With a big, chocolaty body, cozy roasted almond nuttiness and tons of balanced caramel sweetness, this Trade-exclusive cup is just about as comforting as you can get.',
     'Denver, CO',
     'Huckleberry',
@@ -351,7 +349,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -362,10 +359,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'High Five Blend',
     'Comforting & Rich',
-    'Milk Chocolate, Roastiness, Citrus',
     'With its huge body, chocolaty sweetness, and merest hint of orange acidity, this coffee''s ready to become your own personal cheerleader.',
     'Grand Rapids, MI',
     'Sparrows',
@@ -380,7 +376,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -391,10 +386,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'City Blend',
     'Balanced & Fruity',
-    'Citrus, Brown Sugar, Sweet Vanilla',
     'Sweet balance found in soft citrus acidity and toffee sweetness. So smooth and poetic, we had to write a haiku.',
     'New York, NY',
     'Oren''s',
@@ -409,7 +403,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -420,10 +413,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Oren''s Special Blend',
     'Comforting & Rich',
-    'Milk Chocolate, Brown Sugar, Ripe Fruit',
     'Comforting and rich, with a full body and a deep molasses sweetness. Notes of milk chocolate and dried plum stand out in this supremely cozy cup.',
     'New York, NY',
     'Oren''s',
@@ -438,7 +430,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -449,10 +440,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Enchanted',
     'Comforting & Rich',
-    'Milk Chocolate, Sweet Vanilla, Roastiness',
     'Chocolaty sweetness and a kiss of roast make for a magically cozy cup.',
     'Canton, GA',
     'Alma',
@@ -467,7 +457,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -478,10 +467,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Compass',
     'Sweet & Smooth',
-    'Nut, Milk Chocolate, Citrus',
     'Chocolate and almond butter sweetness for days - this cup offers that classic candy bar profile, with a hint of juicy tangerine acidity.',
     'Nashville, TN',
     'Common Voice',
@@ -496,7 +484,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -507,10 +494,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Black Bear Blend',
     'Comforting & Rich',
-    'Nut, Milk Chocolate, Roastiness',
     'Deeply sweet and chocolaty, with a kiss of roastiness pairing beautifully with notes of toasted walnut.',
     'Bentonville, AR',
     'Airship',
@@ -525,7 +511,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -536,10 +521,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Washington Blend',
     'Comforting & Rich',
-    'Milk Chocolate, Sweet Vanilla, Roastiness',
     'Caramely sweetness, a rich dark chocolaty body, and just a hint of roastiness make this coffee a perfect daily driver.',
     'Portland, OR',
     'Sterling',
@@ -554,7 +538,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -565,10 +548,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Big City',
     'Roasty & Smoky',
-    'Roastiness, Milk Chocolate, Sweet Vanilla',
     'Full-bodied and rich, this roasty cup offers up plenty of honeycomb sweetness with all that deep, dark chocolate.',
     'New York, NY',
     'Joe',
@@ -583,7 +565,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -594,10 +575,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     '71 House Blend',
     'Sweet & Smooth',
-    'Nut, Milk Chocolate, Sweet Vanilla',
     'This signature House Blend was crafted as the hallmark coffee for Irving''s original cafe at 71 Irving Place. Classic, rich, smooth flavors are great with milk.',
     'New York, NY',
     'Irving Farm',
@@ -612,7 +592,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -623,10 +602,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Los Altos',
     'Sweet & Inviting',
-    'Nut, Ripe Fruit, Milk Chocolate',
     'Sweet, almondy, and fudgy with a rich body that is complemented by a splash of juicy cherry acidity.',
     'Cambridge, MA',
     'Broadsheet',
@@ -641,7 +619,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -652,10 +629,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Vista Hermosa',
     'Sweet & Tart',
-    'Citrus, Ripe Fruit, Milk Chocolate',
     'Bright and juicy citrus acidity is upfront is tempered by a pleasant chocolate-cherry sweetness that keeps things balanced.',
     'Grand Rapids, MI',
     'Madcap',
@@ -670,7 +646,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -681,10 +656,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Guatemala Los Santos',
     'Sweet & Inviting',
-    'Citrus, Milk Chocolate, Nut',
     'Zippy citrus acidity up fronts fades into a rich and creamy chocolaty-nutty sweetness, complemented by a velvety smooth body.',
     'Sacramento, CA',
     'Temple',
@@ -699,7 +673,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -710,10 +683,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Space Cadet',
     'Sweet & Smooth',
-    'Nut, Spice, Milk Chocolate',
     'Extra smooth, extra chocolaty-sweet, and dare we say...extraterrestrial? A splash of ripe cherry juiciness makes this crowd-pleasing cup every bit as delicious hot as it is cold.',
     'Salem, MA',
     'Atomic',
@@ -728,7 +700,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -739,10 +710,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Organic Toketee',
     'Sweet & Smooth',
-    'Milk Chocolate, Sweet Vanilla, Ripe Fruit',
     'You’re fancy, huh? So is this elevated take on the classic drip, blend. It’s carefully curated, seasonally rotating, and of course—cultured.',
     'San Francisco, CA',
     'Sightglass',
@@ -757,7 +727,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -768,10 +737,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Toni',
     'Sweet & Smooth',
-    'Milk Chocolate, Ripe Fruit, Nut',
     'A chocolaty sweetness shines throughout this coffee, with a hints of fruit adding complexity and a big, sticky body bringing it all together.',
     'Atlanta, GA',
     'Portrait',
@@ -786,7 +754,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -797,10 +764,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Power & Glory Blend',
     'Balanced & Fruity',
-    'Nut, Ripe Fruit, Citrus',
     'Feel the power of hazelnutty sweetness and a hefty body meet the glory of citrus aromatics and notes of fresh fruit.',
     'Redding, CA',
     'Feast',
@@ -815,7 +781,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -826,10 +791,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'H.O.M.E.S. Blend',
     'Roasty & Smoky',
-    'Roastiness, Milk Chocolate, Sweet Vanilla',
     'Rich, full-bodied, and extra-dark, this one reminds us of a campfire - maybe on the beach of one of the Great Lakes it''s named for.',
     'Grand Rapids, MI',
     'Sparrows',
@@ -844,7 +808,6 @@ INSERT INTO
     id,
     name,
     flavor,
-    flavorNotes,
     description,
     location,
     roaster,
@@ -855,10 +818,9 @@ INSERT INTO
   )
 VALUES
   (
-    nextval('hibernate_sequence'),
+    nextval ('hibernate_sequence'),
     'Blush Berry: Rwanda Sholi Natural',
     'Funky & Fruity',
-    'Berry Fruit, Ripe Fruit, Milk Chocolate',
     'A deliciously syrupy blackberry note permeates this aptly named Rwandan cup, complemented by hints of stone fruit and a milk-chocolaty finish.',
     'Seattle, WA',
     'Caffe Vita',
