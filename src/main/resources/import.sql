@@ -65,6 +65,7 @@ VALUES
     'Montmorency cherry, citrus, milk chocolate. Bright, sweet and silky',
     17.6
   );
+
 INSERT INTO
   coffee (
     id,
@@ -91,6 +92,7 @@ VALUES
     'Electrifying flavors of caramel and chocolate come together in a surprisingly smooth finish, sure to inspire anyone to glam-metal levels of greatness. A power-ballad blend of award-winning single-origin coffees, it''s popular for every brewing method - no espresso machine required!',
     23.9
   );
+
 INSERT INTO
   coffee (
     id,
@@ -117,6 +119,7 @@ VALUES
     'An Emporium is a market place or trading center, which in a way describes who we are. We bring the best coffee from all over the world to our roastery in Austin, TX. We blend together several of our single origin selections to create this coffee that is complex and approachable, just the way a great blend should be and reason enough to make it our house favorite.',
     18.6
   );
+
 INSERT INTO
   coffee (
     id,
@@ -143,6 +146,7 @@ VALUES
     'If you are looking for a dark roast coffee with a low acidity, and helps improve farmers lives? All of the coffees in our Nebula Dark Roast come from the same stellar producers that we work with to make our signature blends and single farm coffees on our menu. The coffees chosen in Nebula score above 80 points which is the specialty coffee cut off line. I really love this project and called it Nebula because that is where stars are born.',
     17.6
   );
+
 INSERT INTO
   coffee (
     id,
@@ -169,6 +173,7 @@ VALUES
     NULL,
     20.5
   );
+
 INSERT INTO
   coffee (
     id,
@@ -195,6 +200,7 @@ VALUES
     'Not only was this Colombian coffee produced by young growers, it was also selected by the world''s youngest Q grader, Frankie Volkema. Sparrows worked with CAFINORTE cooperative in Colombia''s Cauca region to compile this blend of lots, in collaboration with Coffee For Peace. In the cup, it tastes of rich milk chocolate, sweet citrus, and spring flowers. More than all, it celebrates immense accomplishment by the future of coffee.',
     25.1
   );
+
 INSERT INTO
   coffee (
     id,
@@ -221,6 +227,7 @@ VALUES
     'This is our darkest, boldest, most developed cup of coffee we offer yet without the bitterness often associated with dark roasted coffee. This coffee is equally enjoyable black or with cream and sugar. You''ll find no judgement here.',
     19.4
   );
+
 INSERT INTO
   coffee (
     id,
@@ -247,6 +254,7 @@ VALUES
     'The Funky Chicken is a crowdpleaser, sweet and balanced enough to drink black, intense and strong enough to stand up to cream, with an exceptionally clean and sweet finish.',
     17.9
   );
+
 INSERT INTO
   coffee (
     id,
@@ -273,6 +281,7 @@ VALUES
     'This coffee is the go-to lot of our current-harvest Peixoto family coffees.  Rich flavors of berries, chocolate and nuts identify it as a high-quality Brazil.  With a sweet, clean, and rich flavor profile, this coffee pleases just about everyone.',
     22.7
   );
+
 INSERT INTO
   coffee (
     id,
@@ -299,6 +308,7 @@ VALUES
     'Rise above it all with this rich, dark roast with a strong,complex flavor from Latin America. Deliciously aromatic, ahint of Chocolate, a touch of Spice, and notes of Caramelwill lift your spirits when you need to go bold.',
     25.85
   );
+
 INSERT INTO
   coffee (
     id,
@@ -325,6 +335,7 @@ VALUES
     'Bom Senso is a Trade-exclusive, traditional coffee. We source straightforward coffees from Latin America, and roast them a bit darker (for Huckleberry, at least) to create a big, bold cup for the dark roast lovers out there.',
     18.4
   );
+
 INSERT INTO
   coffee (
     id,
@@ -351,6 +362,7 @@ VALUES
     'High fives for all from the Mitten State, because making it out of bed in the morning is cause enough for celebration. Don''t leave yourself hanging.',
     25.2
   );
+
 INSERT INTO
   coffee (
     id,
@@ -377,6 +389,7 @@ VALUES
     'The City Blend is our lightest roast. It is blended from two fine varietals - They''re not just blend half-and-half. Rather, they''re blended in a 70%, 30% proportion.The special proportions of this blend create a surprising complexity to this medium-bodied coffee',
     21.8
   );
+
 INSERT INTO
   coffee (
     id,
@@ -403,6 +416,7 @@ VALUES
     'Our House Blend has a unique sweetness that is enhanced by its full body. The cup is complex, yet smooth. Intriguing. Full of flavor subtleties such that people come to enjoy this coffee more each time.',
     18.65
   );
+
 INSERT INTO
   coffee (
     id,
@@ -429,6 +443,7 @@ VALUES
     'Are you ENCHANTED by dark roast coffee? We can''t help but obsess over this deliciously bold cup of coffee! Strong and bold, with no lingering aftertaste. We recommend drinking enchanted hot or over ice to enjoy its strong notes of creamy dark chocolate, molasses, and toasted pecans.',
     21.55
   );
+
 INSERT INTO
   coffee (
     id,
@@ -455,6 +470,7 @@ VALUES
     'A gentle, medium roast from South America brings out the unique flavor from beans harvestedby farmers who truly listen to their land. Roasted just longenough to develop a full-bodied richness, this blend is theperfect middle ground when you crave a hint of sweetnessand a slightly stronger brew.',
     17.75
   );
+
 INSERT INTO
   coffee (
     id,
@@ -481,6 +497,7 @@ VALUES
     'A lot can be (and has been) said about dark roasted coffee. This is the only coffee we profile by roast color. But we don''t just turn coffee dark by roasting it longer. We pay close attention to Black Bear by selecting the best coffee and roasting it carefully so it retains its sweetness. Black Bear is complex, velvety, and roasted darker to bring out a rich body.',
     25.45
   );
+
 INSERT INTO
   coffee (
     id,
@@ -507,6 +524,7 @@ VALUES
     'Composed of top quality Central and South American beans, the Washington is sourced and roasted to taste like the coffee our country grew up drinking. With classic flavors like rich chocolate, caramel, and a hint of toasted nuts, Washington will get you across the Delaware (or at least it’ll get you to work).',
     25.1
   );
+
 INSERT INTO
   coffee (
     id,
@@ -533,6 +551,7 @@ VALUES
     'Sturdy and sweet, utilitarian and enjoyable, this is a coffee that holds its own in the big city. This French Roast features deep and comforting flavors of burnt sugar, chocolate, and roasted nuts— a classic profile which will appeal to any dark roast lover.',
     24.4
   );
+
 INSERT INTO
   coffee (
     id,
@@ -559,6 +578,7 @@ VALUES
     'Our signature House Blend was created as the hallmark coffee for our original cafe at 71 Irving Place. The blend has a chocolate, round, and smooth flavor.',
     19.65
   );
+
 INSERT INTO
   coffee (
     id,
@@ -585,6 +605,7 @@ VALUES
     'This community lot was compiled by the UCANOCH Cooperative in Chiapas, who many programs that ensure consistency and quality season after season. Chiapas is a hub of coffee production in Mexico, despite its small geographic size; this lot is a great example of this quality in product, and processing practices. If you''re a fan of traditional coffee profiles, this will be a very satisfying option to try.',
     23.15
   );
+
 INSERT INTO
   coffee (
     id,
@@ -611,6 +632,7 @@ VALUES
     'We first met Luis Reinoso in 2010, and have been buying his coffee ever since. Luis produces coffee in a collaborative effort with his wife, Yenni. Luis and Yenni operate on a small 4 hectare farm in the remote valley Herrera, Tolima where the young farmers do the processing while older more experienced farmers do the sorting. This coffee is a washed processed, blend of Caturra and Bourbon varieties grown in the Tolima region of Columbia.',
     20.65
   );
+
 INSERT INTO
   coffee (
     id,
@@ -637,6 +659,7 @@ VALUES
     'This medium bodied coffee is well balanced in flavor, giving notes of light lemon zest, rich milk chocolate, and sweetly tart cherry. The coffee culminates in a slight lingering finish.',
     23.55
   );
+
 INSERT INTO
   coffee (
     id,
@@ -663,6 +686,7 @@ VALUES
     'A long time ago in a galaxy far, far away... the perfect blend of coffees for cold brew was born. But a Space Cadet isn’t bound by the rules of any world but their own, so you can brew this blend up however you’d like! Our team tastes notes of clementine, nougat and burnt sugar.',
     16.2
   );
+
 INSERT INTO
   coffee (
     id,
@@ -689,6 +713,7 @@ VALUES
     'Toketee is an elevated take on the classic drip blend, showcasing carefully curated, seasonally rotating coffees from Central and South America.',
     18.3
   );
+
 INSERT INTO
   coffee (
     id,
@@ -715,6 +740,7 @@ VALUES
     'An unapologetically chocolate coffee with nutty tones. Inspired by the acclaimed author, Toni Morrison.',
     21.4
   );
+
 INSERT INTO
   coffee (
     id,
@@ -741,6 +767,7 @@ VALUES
     'Flavor notes of Hazelnut and nectarine team up with dark chocolate in this sweet, full bodied coffee. With mellow acidity and round body, it’s morning glory in cup.',
     20.9
   );
+
 INSERT INTO
   coffee (
     id,
@@ -767,6 +794,7 @@ VALUES
     'Fill your cup with this craveably classic blend, with flavors deeper than Lake Superior that linger longer than Michigan winters. Never has an acronym tasted so good.',
     17.1
   );
+
 INSERT INTO
   coffee (
     id,
