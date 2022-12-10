@@ -31,6 +31,9 @@ public class Coffee extends PanacheEntityBase {
   public String flavor;
 
   @ManyToMany()
+  public Set<BagSize> availableBagSizes;
+
+  @ManyToMany()
   public Set<FlavorNote> flavorNotes;
 
   @Column(length = 400) 
