@@ -25,7 +25,7 @@ public class Coffee extends PanacheEntityBase {
   public String name;
 
   @NotNull()
-  public Double price;
+  public Double pricePerKilo;
 
   @NotBlank(message = "Flavor is required")
   public String flavor;

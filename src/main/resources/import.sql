@@ -31,7 +31,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -58,7 +58,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -85,7 +85,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -112,7 +112,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -139,7 +139,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -166,7 +166,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -193,7 +193,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -220,7 +220,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -247,7 +247,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -274,7 +274,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -301,7 +301,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -328,7 +328,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -355,7 +355,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -382,7 +382,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -409,7 +409,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -436,7 +436,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -463,7 +463,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -490,7 +490,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -517,7 +517,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -544,7 +544,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -571,7 +571,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -598,7 +598,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -625,7 +625,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -652,7 +652,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -679,7 +679,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -706,7 +706,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -733,7 +733,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -760,7 +760,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -787,7 +787,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
@@ -814,7 +814,7 @@ INSERT INTO
     imageURL,
     roastLevel,
     roasterNotes,
-    price
+    pricePerKilo
   )
 VALUES
   (
