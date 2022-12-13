@@ -5,8 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotBlank;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
@@ -30,13 +32,13 @@ public class Coffee extends PanacheEntityBase {
   @NotBlank(message = "Flavor is required")
   public String flavor;
 
-  @ManyToMany()
-  public Set<BagSize> availableBagSizes;
+  @OneToMany(mappedBy = "coffee")
+  public Set<CoffeeBagSize> coffeeBagSizes = new HashSet<CoffeeBagSize>();
 
   @ManyToMany()
   public Set<FlavorNote> flavorNotes;
 
-  @Column(length = 400) 
+  @Column(length = 400)
   @NotBlank(message = "Description is required")
   public String description;
 
@@ -52,6 +54,6 @@ public class Coffee extends PanacheEntityBase {
   @NotNull()
   public Integer roastLevel;
 
-  @Column(length = 500) 
+  @Column(length = 500)
   public String roasterNotes;
 }
