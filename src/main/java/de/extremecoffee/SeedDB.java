@@ -11,6 +11,7 @@ import jakarta.enterprise.event.Observes;
 import jakarta.transaction.Transactional;
 import de.extremecoffee.product.BagSize;
 import de.extremecoffee.product.Coffee;
+import de.extremecoffee.product.CoffeeBagSize;
 import de.extremecoffee.product.FlavorNote;
 
 @ApplicationScoped
@@ -37,7 +38,14 @@ public class SeedDB {
     List<Coffee> coffees = Coffee.listAll();
     List<BagSize> bagSizes = BagSize.listAll();
     for (var coffee : coffees) {
-      coffee.availableBagSizes = new HashSet<BagSize>(bagSizes);
+      for (var bagSize : bagSizes) {
+        var coffeeBagSize = new CoffeeBagSize();
+        coffeeBagSize.coffee = coffee;
+        coffeeBagSize.bagSize = bagSize;
+        coffeeBagSize.quantity = ThreadLocalRandom.current().nextInt(0, 8);
+        coffeeBagSize.persist();
+        coffee.coffeeBagSizes.add(coffeeBagSize);
+      }
       coffee.persist();
     }
   }

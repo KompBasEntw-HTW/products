@@ -4,34 +4,31 @@ import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotNull;
-
-import java.util.HashSet;
-import java.util.Set;
 
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 @Entity
-public class BagSize extends PanacheEntityBase {
+public class CoffeeBagSize extends PanacheEntityBase {
   @Id
   @GeneratedValue
   @Schema(readOnly = true)
+  @JsonbTransient
   public Long id;
 
-  @NotBlank(message = "Name must not be empty")
-  public String name;
-
-  @NotNull()
-  public Integer weightInGrams;
-
-  @NotNull()
-  public Double volumeDiscount;
-
   @JsonbTransient
-  @OneToMany(mappedBy = "bagSize")
-  public Set<CoffeeBagSize> coffeeBagSizes = new HashSet<CoffeeBagSize>();
+  @ManyToOne
+  @JoinColumn(name = "coffee_id")
+  public Coffee coffee;
+
+  @ManyToOne
+  @JoinColumn(name = "bagsize_id")
+  public BagSize bagSize;
+
+  @NotNull()
+  public Integer quantity;
 }
