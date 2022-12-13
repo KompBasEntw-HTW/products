@@ -13,12 +13,12 @@ VALUES
   (nextval ('hibernate_sequence'), 'Nut');
 
 INSERT INTO
-  bagsize (id, name, weightInGrams, priceModifier)
+  bagsize (id, name, weightInGrams, volumeDiscount)
 VALUES
-  (nextval ('hibernate_sequence'), 'S', 250, 1.0),
-  (nextval ('hibernate_sequence'), 'M', 500, 0.9),
-  (nextval ('hibernate_sequence'), 'L', 750, 0.8),
-  (nextval ('hibernate_sequence'), 'XL', 1000, 0.7);
+  (nextval ('hibernate_sequence'), 'S', 250, 0),
+  (nextval ('hibernate_sequence'), 'M', 500, 0.1),
+  (nextval ('hibernate_sequence'), 'L', 750, 0.15),
+  (nextval ('hibernate_sequence'), 'XL', 1000, 0.2);
 
 INSERT INTO
   coffee (
