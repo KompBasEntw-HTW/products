@@ -25,6 +25,6 @@ public class BagSize extends PanacheEntityBase {
   public Integer weightInGrams;
 
   @NotNull()
-  public Double priceModifier;
+  public Double volumeDiscount;
 
 }
