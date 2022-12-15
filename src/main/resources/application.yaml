@@ -21,3 +21,16 @@ quarkus:
   quarkus:
     hibernate-orm:
       sql-load-script: import.sql
+
+rabbitmq-host: rabbitmq
+rabbitmq-port: 5672
+rabbitmq-username: ${RABBITMQ_DEFAULT_USER}
+rabbitmq-password: ${RABBITMQ_DEFAULT_PASS} 
+  
+mp:
+  messaging:
+    outgoing:
+      stock:
+        connector: smallrye-rabbitmq
+        exchange:
+          name: stock
