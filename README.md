@@ -13,6 +13,7 @@ then:
 ./mvnw quarkus:remote-dev
 ```
 ```mermaid
+%%{init: {'theme':'neutral'}}%%
 erDiagram
     Coffee }o -- o{ FlavorNote: has
     Coffee || -- o{ CoffeeBagSize: has
