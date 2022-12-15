@@ -1,5 +1,7 @@
 package de.extremecoffee.product;
 
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import io.smallrye.common.constraint.NotNull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,14 +9,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotBlank;
-
 import java.util.HashSet;
 import java.util.Set;
-
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
-
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
-import io.smallrye.common.constraint.NotNull;
 
 @Entity
 public class Coffee extends PanacheEntityBase {
@@ -26,8 +23,7 @@ public class Coffee extends PanacheEntityBase {
   @NotBlank(message = "Name is required")
   public String name;
 
-  @NotNull()
-  public Double pricePerKilo;
+  @NotNull() public Double pricePerKilo;
 
   @NotBlank(message = "Flavor is required")
   public String flavor;
@@ -35,8 +31,7 @@ public class Coffee extends PanacheEntityBase {
   @OneToMany(mappedBy = "coffee")
   public Set<CoffeeBagSize> coffeeBagSizes = new HashSet<CoffeeBagSize>();
 
-  @ManyToMany()
-  public Set<FlavorNote> flavorNotes;
+  @ManyToMany() public Set<FlavorNote> flavorNotes;
 
   @Column(length = 400)
   @NotBlank(message = "Description is required")
@@ -51,8 +46,7 @@ public class Coffee extends PanacheEntityBase {
   @NotBlank(message = "ImageURL is required")
   public String imageUrl;
 
-  @NotNull()
-  public Integer roastLevel;
+  @NotNull() public Integer roastLevel;
 
   @Column(length = 500)
   public String roasterNotes;

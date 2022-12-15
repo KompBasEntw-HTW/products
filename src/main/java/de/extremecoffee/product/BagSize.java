@@ -1,5 +1,6 @@
 package de.extremecoffee.product;
 
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,13 +8,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-
 import java.util.HashSet;
 import java.util.Set;
-
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
-
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 @Entity
 public class BagSize extends PanacheEntityBase {
@@ -25,11 +22,9 @@ public class BagSize extends PanacheEntityBase {
   @NotBlank(message = "Name must not be empty")
   public String name;
 
-  @NotNull()
-  public Integer weightInGrams;
+  @NotNull() public Integer weightInGrams;
 
-  @NotNull()
-  public Double volumeDiscount;
+  @NotNull() public Double volumeDiscount;
 
   @JsonbTransient
   @OneToMany(mappedBy = "bagSize")

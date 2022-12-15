@@ -1,7 +1,6 @@
 package de.extremecoffee;
 
-import java.util.List;
-
+import de.extremecoffee.product.Coffee;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.DELETE;
@@ -9,8 +8,7 @@ import jakarta.ws.rs.GET;
 import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
-
-import de.extremecoffee.product.Coffee;
+import java.util.List;
 
 @Path("/coffee")
 public class CoffeeController {
