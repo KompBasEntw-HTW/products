@@ -6,6 +6,7 @@ import de.extremecoffee.product.CoffeeBagSize;
 import de.extremecoffee.product.FlavorNote;
 import io.netty.util.internal.ThreadLocalRandom;
 import io.quarkus.runtime.StartupEvent;
+import io.quarkus.scheduler.Scheduled;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
@@ -17,6 +18,11 @@ import java.util.List;
 @ApplicationScoped
 public class SeedDB {
   @Inject StockUpdateProducer stockUpdateProducer;
+
+  @Scheduled(cron = "0 */2 * ? * *")
+  void transmitStockState() {
+    publishStock();
+  }
 
   @Transactional
   void startSeed(@Observes StartupEvent ev) {
