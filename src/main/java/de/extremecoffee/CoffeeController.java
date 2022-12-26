@@ -10,7 +10,10 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import java.util.List;
 
+import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
+
 @Path("/coffee")
+@SecurityRequirement(name = "Bearer Authentication")
 public class CoffeeController {
   @GET
   public List<Coffee> getAll() {
