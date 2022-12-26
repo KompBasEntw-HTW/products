@@ -1,7 +1,7 @@
 quarkus:
   smallrye-openapi:
     security-scheme: oidc
-    oidc-open-id-connect-url: http://${HOSTNAME}/management/keycloak/realms/exe/.well-known/openid-configuration
+    oidc-open-id-connect-url: http://localhost/management/keycloak/realms/exe/.well-known/openid-configuration
     security-scheme-name: Bearer Authentication
   datasource:
     db-kind: postgresql
@@ -40,9 +40,10 @@ quarkus:
   quarkus:
     hibernate-orm:
       sql-load-script: import.sql
-    smallrye-openapi:
-      security-scheme: oidc
-      oidc-open-id-connect-url: https://${HOSTNAME}/management/keycloak/realms/exe/.well-known/openid-configuration
+  smallrye-openapi:
+    security-scheme: oidc
+    # hardcoding hostname here
+    oidc-open-id-connect-url: https://exe.dlugoschvincent.de/management/keycloak/realms/exe/.well-known/openid-configuration
 rabbitmq-host: rabbitmq
 rabbitmq-port: 5672
 rabbitmq-username: ${RABBITMQ_DEFAULT_USER}
