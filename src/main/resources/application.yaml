@@ -1,32 +1,49 @@
 quarkus:
-  datasource: 
+  smallrye-openapi:
+    security-scheme: oidc
+    oidc-open-id-connect-url: http://${HOSTNAME}/management/keycloak/realms/exe/.well-known/openid-configuration
+    security-scheme-name: Bearer Authentication
+  datasource:
     db-kind: postgresql
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
     jdbc:
       url: jdbc:postgresql://productdb:5432/products
   hibernate-orm:
-    database: 
+    database:
       generation: drop-and-create
-
   package:
     type: mutable-jar
-  live-reload: 
-    password: livereloadpassword 
+  live-reload:
+    password: livereloadpassword
     url: http://localhost:8081
   # redis:
-    # hosts: redit://cache:6379
-
+  # hosts: redit://cache:6379
+  oidc:
+    auth-server-url: http://keycloak:8080/management/keycloak/realms/exe
+    client-id: product-service
+    credentials:
+      secret: ${KEYCLOAK_EXE_SECRET}
+    tls:
+      verification: none
+  keycloak:
+    policy-enforcer:
+      enable: true
+      paths:
+        1:
+          path: /q/openapi
+          enforcement-mode: disabled
+        2:
+          path: /coffee/*
+          enforcement-mode: disabled
 "%prod":
   quarkus:
     hibernate-orm:
       sql-load-script: import.sql
-
 rabbitmq-host: rabbitmq
 rabbitmq-port: 5672
 rabbitmq-username: ${RABBITMQ_DEFAULT_USER}
-rabbitmq-password: ${RABBITMQ_DEFAULT_PASS} 
-  
+rabbitmq-password: ${RABBITMQ_DEFAULT_PASS}
 mp:
   messaging:
     outgoing:
