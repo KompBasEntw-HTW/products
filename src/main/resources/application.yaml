@@ -40,6 +40,9 @@ quarkus:
   quarkus:
     hibernate-orm:
       sql-load-script: import.sql
+    smallrye-openapi:
+      security-scheme: oidc
+      oidc-open-id-connect-url: https://${HOSTNAME}/management/keycloak/realms/exe/.well-known/openid-configuration
 rabbitmq-host: rabbitmq
 rabbitmq-port: 5672
 rabbitmq-username: ${RABBITMQ_DEFAULT_USER}
