@@ -21,9 +21,9 @@ quarkus:
   # hosts: redit://cache:6379
   oidc:
     auth-server-url: http://keycloak:8080/management/keycloak/realms/exe
-    client-id: product-service
+    client-id: ${KEYCLOAK_PRODUCT_CLIENT_ID}
     credentials:
-      secret: ${KEYCLOAK_EXE_SECRET}
+      secret: ${KEYCLOAK_PRODUCT_CLIENT_SECRET}
     tls:
       verification: none
   keycloak:
