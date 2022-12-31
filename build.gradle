@@ -9,8 +9,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.quarkus:quarkus-keycloak-authorization'
-    implementation 'io.quarkus:quarkus-oidc'
     implementation 'io.quarkus:quarkus-scheduler'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-hibernate-orm-panache'
