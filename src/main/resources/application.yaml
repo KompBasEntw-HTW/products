@@ -30,3 +30,13 @@ mp:
         connector: smallrye-rabbitmq
         exchange:
           name: stock
+      order-validation:
+        connector: smallrye-rabbitmq
+        exchange:
+          name: order-validation
+    incoming:
+      order-validation-request:
+        connector: smallrye-rabbitmq
+        auto-acknowledgement: true
+        queue:
+          name: order-validation-request
