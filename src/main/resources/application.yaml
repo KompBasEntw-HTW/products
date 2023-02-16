@@ -36,6 +36,7 @@ mp:
           name: order-validation
     incoming:
       order-validation-request:
+        address: order-validation-request
         connector: smallrye-rabbitmq
         auto-acknowledgement: true
         queue:
