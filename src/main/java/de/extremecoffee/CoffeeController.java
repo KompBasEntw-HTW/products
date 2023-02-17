@@ -14,6 +14,7 @@ import java.util.List;
 public class CoffeeController {
   @GET
   public List<Coffee> getAll() {
+    System.out.println("Cane");
     return Coffee.listAll();
   }
 
