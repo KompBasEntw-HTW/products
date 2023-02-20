@@ -77,6 +77,7 @@ public class OrderValidationProcessor {
     Log.info("kiloPrice:" + kiloPrice);
     Log.info("volumeDiscount:" + volumeDiscount);
     Log.info("weightInGrams:" + weightInGrams);
-    return kiloPrice * (1 - volumeDiscount) * (weightInGrams / 1000d);
+    var rawPrice = kiloPrice * (1 - volumeDiscount) * (weightInGrams / 1000d);
+    return Math.floor(rawPrice * 10) / 10.0;
   }
 }
