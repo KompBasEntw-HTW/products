@@ -12,6 +12,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -65,7 +66,7 @@ public class SeedDB {
     List<CoffeeBagSize> coffeeBagSizes = CoffeeBagSize.listAll();
     for (var coffeeBagSize : coffeeBagSizes) {
       var stockDto =
-          new StockDto(coffeeBagSize.coffee.id, coffeeBagSize.bagSize.id, coffeeBagSize.quantity);
+              new StockDto(coffeeBagSize.coffee.id, coffeeBagSize.bagSize.id, coffeeBagSize.quantity);
       stockUpdateProducer.send(stockDto);
     }
   }

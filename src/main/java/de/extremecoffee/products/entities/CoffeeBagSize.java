@@ -27,9 +27,10 @@ public class CoffeeBagSize extends PanacheEntityBase {
   @JoinColumn(name = "bagsize_id")
   public BagSize bagSize;
 
-  @NotNull() public Integer quantity;
+  @NotNull()
+  public Integer quantity;
 
-public static CoffeeBagSize getByBagSizeIdandProductId(Long bagSizeId, Long productId){
-  return CoffeeBagSize.find("bagSize.id = ?1 and coffee.id = ?2", bagSizeId, productId).firstResult();
-}
+  public static CoffeeBagSize getByBagSizeIdandProductId(Long bagSizeId, Long productId) {
+    return CoffeeBagSize.find("bagSize.id = ?1 and coffee.id = ?2", bagSizeId, productId).firstResult();
+  }
 }

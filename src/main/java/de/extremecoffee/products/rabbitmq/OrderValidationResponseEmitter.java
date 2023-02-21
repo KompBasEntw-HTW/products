@@ -10,6 +10,7 @@ import org.eclipse.microprofile.reactive.messaging.Emitter;
 public class OrderValidationResponseEmitter {
   @Channel("order-validation")
   Emitter<OrderValidationResponseDto> orderValidationDtoEmitter;
+
   public void dispatchValidationResponse(OrderValidationResponseDto orderValidationResponseDto) {
     Log.info("Sending Message: " + orderValidationResponseDto);
     orderValidationDtoEmitter.send(orderValidationResponseDto);
