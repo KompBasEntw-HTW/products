@@ -1,9 +1,10 @@
 package de.extremecoffee;
 
-import de.extremecoffee.product.BagSize;
-import de.extremecoffee.product.Coffee;
-import de.extremecoffee.product.CoffeeBagSize;
-import de.extremecoffee.product.FlavorNote;
+import de.extremecoffee.products.entities.BagSize;
+import de.extremecoffee.products.entities.Coffee;
+import de.extremecoffee.products.entities.CoffeeBagSize;
+import de.extremecoffee.products.entities.FlavorNote;
+import de.extremecoffee.products.rabbitmq.StockUpdateProducer;
 import io.netty.util.internal.ThreadLocalRandom;
 import io.quarkus.runtime.StartupEvent;
 import io.quarkus.scheduler.Scheduled;
@@ -17,7 +18,8 @@ import java.util.List;
 
 @ApplicationScoped
 public class SeedDB {
-  @Inject StockUpdateProducer stockUpdateProducer;
+  @Inject
+  StockUpdateProducer stockUpdateProducer;
 
   @Scheduled(cron = "0 */2 * ? * *")
   void transmitStockState() {

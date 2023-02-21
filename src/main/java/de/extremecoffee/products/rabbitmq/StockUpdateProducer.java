@@ -1,5 +1,6 @@
-package de.extremecoffee;
+package de.extremecoffee.products.rabbitmq;
 
+import de.extremecoffee.StockDto;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.eclipse.microprofile.reactive.messaging.Channel;
