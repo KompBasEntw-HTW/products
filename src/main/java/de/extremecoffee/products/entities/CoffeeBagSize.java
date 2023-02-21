@@ -1,4 +1,4 @@
-package de.extremecoffee.product;
+package de.extremecoffee.products.entities;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.json.bind.annotation.JsonbTransient;
@@ -28,4 +28,8 @@ public class CoffeeBagSize extends PanacheEntityBase {
   public BagSize bagSize;
 
   @NotNull() public Integer quantity;
+
+public static CoffeeBagSize getByBagSizeIdandProductId(Long bagSizeId, Long productId){
+  return CoffeeBagSize.find("bagSize.id = ?1 and coffee.id = ?2", bagSizeId, productId).firstResult();
+}
 }

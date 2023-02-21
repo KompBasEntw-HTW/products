@@ -1,6 +1,6 @@
 package de.extremecoffee;
 
-import de.extremecoffee.product.Coffee;
+import de.extremecoffee.products.entities.Coffee;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.DELETE;
