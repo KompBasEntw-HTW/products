@@ -20,6 +20,7 @@ public class ProductValidationService {
   record SingleItemValidationResult(boolean isValid, String message, Double itemPrice) {
   }
 
+  @Transactional
   public void validateOrder(OrderValidationRequestDto orderValidationRequestDto) {
     double subTotal = 0d;
     SingleItemValidationResult lastSingleItemValidationResult = null;
@@ -40,7 +41,6 @@ public class ProductValidationService {
     }
   }
 
-  @Transactional
   private void removeItemsFromStock(OrderValidationRequestDto orderValidationRequestDto) {
     for (var itemToValidateDto : orderValidationRequestDto.items()) {
       var coffeeBagSize = CoffeeBagSize.getByBagSizeIdandProductId(itemToValidateDto.bagsizeId(), itemToValidateDto.productId());
