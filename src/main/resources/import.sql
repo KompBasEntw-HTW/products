@@ -1,24 +1,24 @@
 INSERT INTO
   flavornote (id, flavornote)
 VALUES
-  (nextval ('hibernate_sequence'), 'Milk Chocolate'),
-  (nextval ('hibernate_sequence'), 'Citrus'),
-  (nextval ('hibernate_sequence'), 'Ripe Fruit'),
-  (nextval ('hibernate_sequence'), 'Brow Sugar'),
-  (nextval ('hibernate_sequence'), 'Roastiness'),
-  (nextval ('hibernate_sequence'), 'Earthiness'),
-  (nextval ('hibernate_sequence'), 'Sweet Vanilla'),
-  (nextval ('hibernate_sequence'), 'Spice'),
-  (nextval ('hibernate_sequence'), 'Spice'),
-  (nextval ('hibernate_sequence'), 'Nut');
+  (nextval ('flavornote_sequence'), 'Milk Chocolate'),
+  (nextval ('flavornote_sequence'), 'Citrus'),
+  (nextval ('flavornote_sequence'), 'Ripe Fruit'),
+  (nextval ('flavornote_sequence'), 'Brow Sugar'),
+  (nextval ('flavornote_sequence'), 'Roastiness'),
+  (nextval ('flavornote_sequence'), 'Earthiness'),
+  (nextval ('flavornote_sequence'), 'Sweet Vanilla'),
+  (nextval ('flavornote_sequence'), 'Spice'),
+  (nextval ('flavornote_sequence'), 'Spice'),
+  (nextval ('flavornote_sequence'), 'Nut');
 
 INSERT INTO
   bagsize (id, name, weightInGrams, volumeDiscount)
 VALUES
-  (nextval ('hibernate_sequence'), 'S', 250, 0),
-  (nextval ('hibernate_sequence'), 'M', 500, 0.1),
-  (nextval ('hibernate_sequence'), 'L', 750, 0.15),
-  (nextval ('hibernate_sequence'), 'XL', 1000, 0.2);
+  (nextval ('bagsize_sequence'), 'S', 250, 0),
+  (nextval ('bagsize_sequence'), 'M', 500, 0.1),
+  (nextval ('bagsize_sequence'), 'L', 750, 0.15),
+  (nextval ('bagsize_sequence'), 'XL', 1000, 0.2);
 
 INSERT INTO
   coffee (
@@ -35,7 +35,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Flatlander Signature Blend',
     'Sweet & Smooth',
     'Easy does it. And this coffee proves just that. A bittersweet aroma is balanced by a nutty, sweet finish. Here’s to one less complication.',
@@ -62,7 +62,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Mejor',
     'Balanced & Fruity',
     'Fruity and sweet, with a juicy note of cherry bolstered by a deep, nutty sweetness.',
@@ -89,7 +89,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Kickstart',
     'Sweet & Smooth',
     'Dark chocolate and brown sugar sweetness are front and center in this easy-drinking coffee, with a surprising (and delightful) note of rose throughout.',
@@ -116,7 +116,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Emporium House Blend',
     'Sweet & Smooth',
     'Coffee should bring people together. This blend manages to unite three distinctly delicious single origins to create a truly harmonious coffee. Complex but approachable, no matter how you brew it.',
@@ -143,7 +143,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Nebula - a Dark Roast',
     'Comforting & Rich',
     'Super honey-sweet and full-bodied, this comforting cup''s rich chocolaty notes and hint of roast will satisfy any sweet tooth.',
@@ -170,7 +170,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Amsterdam',
     'Sweet & Smooth',
     'Rich, sweet, smooth - this comforting cup reminds us of chocolaty fudge with a toffee swirl. Perfect on its own or with a splash of your favorite milk, we''re pretty sure you''ll love this one.',
@@ -197,7 +197,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Joven Cauca',
     'Sweet & Smooth',
     'Produced by the Cafinorte co-op''s Young Coffee Producers Program, this coffee has a smooth body and comforting chocolate flavors up front, with enough cherry cola depth to make for a really fun cup.',
@@ -224,7 +224,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Late Night',
     'Comforting & Rich',
     'This (caffeinated) cozy cup brings you all the comfort you need in your morning routine: a smooth, rich body and deep chocolaty sweetness envelop notes of roasted walnut and hints of clove.',
@@ -251,7 +251,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Funky Chicken',
     'Sweet & Smooth',
     'Don''t be surprised if you flap your arms and your feet start kickin'' - this balanced blend brings together an earthy sweetness with a bright plum acidity.',
@@ -278,7 +278,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Família Peixoto',
     'Sweet & Smooth',
     'A lusciously creamy body and cozy sweetness make this coffee a hug in a mug, with just a hint of citrus aromatics to keep things interesting.',
@@ -305,7 +305,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Canopy',
     'Sweet & Smooth',
     'A deep black cherry sweetness peeks through this coffee''s pronounced dark chocolate and cinnamon notes.',
@@ -332,7 +332,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Bom Senso',
     'Comforting & Rich',
     'With a big, chocolaty body, cozy roasted almond nuttiness and tons of balanced caramel sweetness, this Trade-exclusive cup is just about as comforting as you can get.',
@@ -359,7 +359,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'High Five Blend',
     'Comforting & Rich',
     'With its huge body, chocolaty sweetness, and merest hint of orange acidity, this coffee''s ready to become your own personal cheerleader.',
@@ -386,7 +386,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'City Blend',
     'Balanced & Fruity',
     'Sweet balance found in soft citrus acidity and toffee sweetness. So smooth and poetic, we had to write a haiku.',
@@ -413,7 +413,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Oren''s Special Blend',
     'Comforting & Rich',
     'Comforting and rich, with a full body and a deep molasses sweetness. Notes of milk chocolate and dried plum stand out in this supremely cozy cup.',
@@ -440,7 +440,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Enchanted',
     'Comforting & Rich',
     'Chocolaty sweetness and a kiss of roast make for a magically cozy cup.',
@@ -467,7 +467,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Compass',
     'Sweet & Smooth',
     'Chocolate and almond butter sweetness for days - this cup offers that classic candy bar profile, with a hint of juicy tangerine acidity.',
@@ -494,7 +494,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Black Bear Blend',
     'Comforting & Rich',
     'Deeply sweet and chocolaty, with a kiss of roastiness pairing beautifully with notes of toasted walnut.',
@@ -521,7 +521,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Washington Blend',
     'Comforting & Rich',
     'Caramely sweetness, a rich dark chocolaty body, and just a hint of roastiness make this coffee a perfect daily driver.',
@@ -548,7 +548,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Big City',
     'Roasty & Smoky',
     'Full-bodied and rich, this roasty cup offers up plenty of honeycomb sweetness with all that deep, dark chocolate.',
@@ -575,7 +575,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     '71 House Blend',
     'Sweet & Smooth',
     'This signature House Blend was crafted as the hallmark coffee for Irving''s original cafe at 71 Irving Place. Classic, rich, smooth flavors are great with milk.',
@@ -602,7 +602,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Los Altos',
     'Sweet & Inviting',
     'Sweet, almondy, and fudgy with a rich body that is complemented by a splash of juicy cherry acidity.',
@@ -629,7 +629,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Vista Hermosa',
     'Sweet & Tart',
     'Bright and juicy citrus acidity is upfront is tempered by a pleasant chocolate-cherry sweetness that keeps things balanced.',
@@ -656,7 +656,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Guatemala Los Santos',
     'Sweet & Inviting',
     'Zippy citrus acidity up fronts fades into a rich and creamy chocolaty-nutty sweetness, complemented by a velvety smooth body.',
@@ -683,7 +683,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Space Cadet',
     'Sweet & Smooth',
     'Extra smooth, extra chocolaty-sweet, and dare we say...extraterrestrial? A splash of ripe cherry juiciness makes this crowd-pleasing cup every bit as delicious hot as it is cold.',
@@ -710,7 +710,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Organic Toketee',
     'Sweet & Smooth',
     'You’re fancy, huh? So is this elevated take on the classic drip, blend. It’s carefully curated, seasonally rotating, and of course—cultured.',
@@ -737,7 +737,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Toni',
     'Sweet & Smooth',
     'A chocolaty sweetness shines throughout this coffee, with a hints of fruit adding complexity and a big, sticky body bringing it all together.',
@@ -764,7 +764,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Power & Glory Blend',
     'Balanced & Fruity',
     'Feel the power of hazelnutty sweetness and a hefty body meet the glory of citrus aromatics and notes of fresh fruit.',
@@ -791,7 +791,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'H.O.M.E.S. Blend',
     'Roasty & Smoky',
     'Rich, full-bodied, and extra-dark, this one reminds us of a campfire - maybe on the beach of one of the Great Lakes it''s named for.',
@@ -818,7 +818,7 @@ INSERT INTO
   )
 VALUES
   (
-    nextval ('hibernate_sequence'),
+    nextval ('coffee_sequence'),
     'Blush Berry: Rwanda Sholi Natural',
     'Funky & Fruity',
     'A deliciously syrupy blackberry note permeates this aptly named Rwandan cup, complemented by hints of stone fruit and a milk-chocolaty finish.',
