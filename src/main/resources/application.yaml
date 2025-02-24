@@ -9,12 +9,15 @@ quarkus:
     database:
       generation: drop-and-create
   package:
-    type: mutable-jar
+    jar:
+      type: mutable-jar
   live-reload:
     password: livereloadpassword
     url: http://localhost:8081
-  # redis:
-  # hosts: redit://cache:6379
+  redis:
+    hosts: redis://cache:6379
+  oidc:
+    auth-server-url: https://auth.dlugoschvincent.de/realms/exe
 "%prod":
   quarkus:
     hibernate-orm:
